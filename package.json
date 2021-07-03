@@ -8,6 +8,7 @@
         "feedparser":"~0.19.2",
         "redis":"~0.10.1",
         "node-red": "~1.x",
-        "node-red-contrib-web-page-screenshot": "file:./nodes/web-page-screenshot"
+        "node-red-contrib-web-page-screenshot": "file:./nodes/web-page-screenshot",
+        "puppeteer": "^10.1.0"
     }
 }

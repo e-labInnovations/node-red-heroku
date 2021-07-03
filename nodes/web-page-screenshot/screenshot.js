@@ -5,11 +5,14 @@ module.exports = function (RED) {
         let path = config.path;
         let puppeteer = require('puppeteer');
         let option = {
-          args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-          ],
-        };
+              headless: true,
+              args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--single-process'
+              ],
+            };
 
         if (path) {
             option.executablePath = path;
